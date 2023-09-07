@@ -22,7 +22,7 @@ A simple Kompose example using the `tilt-avatars` sample app.
 ## Steps (Rancher Desktop)
 
 1. Install Rancher Desktop in dockerd mode
-2. Forward `traefik` from port 80
+2. [Forward `traefik` from port 80](https://docs.rancherdesktop.io/getting-started/installation#traefik-port-binding-access)
    - `sudo sysctl net.ipv4.ip_unprivileged_port_start=0` (Only needed on Linux)
    - Open "Rancher Desktop" -> "Port Forwarding" -> check "Include Kubernetes services" and click "Forward" on "traefik" "web". Key in port "80"
    - You should be able to visit http://localhost and see a "404 page not found"
